@@ -1,0 +1,80 @@
+name: Generate rekordbox mappings
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/generate_rekordbox_csv.py'
+      - 'mappings/**'
+      - '.github/workflows/generate-rekordbox-mappings.yml'
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'releases/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Regenerate mapping CSVs
+        run: python3 tools/generate_rekordbox_csv.py
+
+      - name: Compute version tag
+        id: version
+        run: |
+          TS=$(date -u +'%Y%m%dT%H%M%SZ')
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            VARIANT='dev.'
+          else
+            VARIANT=''
+          fi
+          echo "ts=$TS"           >> "$GITHUB_OUTPUT"
+          echo "variant=$VARIANT" >> "$GITHUB_OUTPUT"
+
+      - name: Stage versioned copies
+        id: stage
+        run: |
+          SRC=mappings/k3-rekordbox-mixer
+          OUT=build
+          mkdir -p "$OUT"
+          TS='${{ steps.version.outputs.ts }}'
+          VARIANT='${{ steps.version.outputs.variant }}'
+          for base in k3-performance k3-export; do
+            cp "$SRC/${base}.midi.csv" \
+               "$OUT/${base}.${VARIANT}${TS}.midi.csv"
+          done
+          ls -la "$OUT"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rekordbox-mappings-${{ steps.version.outputs.variant }}${{ steps.version.outputs.ts }}
+          path: build/*.midi.csv
+          if-no-files-found: error
+
+      - name: Commit versioned copies to releases/ (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          mkdir -p releases
+          cp build/*.midi.csv releases/
+          if git diff --quiet releases; then
+            echo "No new release artifacts to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add releases
+          git commit -m "release: rekordbox mappings ${{ steps.version.outputs.ts }}"
+          git push origin HEAD:main

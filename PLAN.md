@@ -64,4 +64,13 @@ All buttons are individually-addressable RGB for LED feedback.
 - [ ] Audit legacy `.tsi` for portable concepts → variant 2
 - [ ] Design no-mixer variant (3)
 - [ ] Design Bitwig variant (4)
-- [ ] Produce rekordbox mapping XML from the specs
+- [x] Produce rekordbox mapping CSVs from the specs (rekordbox uses CSV, not XML)
+
+## Release automation
+
+`.github/workflows/generate-rekordbox-mappings.yml` regenerates the mapping CSVs on every PR and on every push to `main`, and stamps them with a UTC datetimestamp:
+
+- **PR builds** → artifact `rekordbox-mappings-dev.<ts>`, files named `k3-{performance,export}.dev.<ts>.midi.csv`
+- **Main builds** → artifact `rekordbox-mappings-<ts>`, files named `k3-{performance,export}.<ts>.midi.csv`, also committed to `releases/` on `main`
+
+Timestamp format is `YYYYMMDDTHHMMSSZ`. The generator script is `tools/generate_rekordbox_csv.py`; the unstamped canonical copies stay in `mappings/k3-rekordbox-mixer/`.
