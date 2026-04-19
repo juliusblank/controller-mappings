@@ -16,7 +16,7 @@
 
 | # | Variant | Scope | Status |
 |---|---|---|---|
-| 1 | K3 + rekordbox + Euphonia | single K3 first, 2 decks | **Performance spec drafted** — Export pending |
+| 1 | K3 + rekordbox + Euphonia | single K3 first, 2 decks | **Performance + Export specs drafted** (diagrams in `mappings/k3-rekordbox-mixer/diagrams/`) |
 | 2 | Traktor K2 → rekordbox port | audit legacy `.tsi`, decide portability | pending |
 | 3 | K3 + rekordbox, no mixer | K3 handles channel mixing too | pending |
 | 4 | K3 + rekordbox + Bitwig | DJ + DAW integration | pending |
@@ -59,7 +59,7 @@ All buttons are individually-addressable RGB for LED feedback.
 
 ## Next steps
 
-- [ ] Design Export-mode spec for variant 1
+- [x] Design Export-mode spec for variant 1
 - [ ] Extend variant 1 to second K3 (decks C / D)
 - [ ] Audit legacy `.tsi` for portable concepts → variant 2
 - [ ] Design no-mixer variant (3)

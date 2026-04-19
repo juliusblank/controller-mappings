@@ -4,6 +4,8 @@ Single Xone:K3 controlling 2 decks (A, B) in rekordbox Performance Mode. All mix
 
 See `PLAN.md` for the control-labelling convention and deck assignment rationale.
 
+**Visual diagrams**: [`diagrams/performance-layer1.svg`](diagrams/performance-layer1.svg) · [`diagrams/performance-layer2.svg`](diagrams/performance-layer2.svg)
+
 ## Layer 1 — Play
 
 Upper half (encoders, pots, inline buttons, faders) is identical on Layer 2. Only the matrix changes between layers.
