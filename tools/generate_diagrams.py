@@ -20,17 +20,20 @@ DEFAULT_BB = '#0dcaf0'   # cyan (row Bb)
 DEFAULT_BC = '#ffc107'   # amber (row Bc)
 MATRIX_COL = ['#d63384', '#0d6efd', '#ffc107', '#198754']  # pink/blue/amber/green per photo
 
+def esc(s):
+    return (str(s).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))
+
 def encoder(cx, cy, label, color=None):
     c = color or '#2a2a2a'
     return (f'<circle cx="{cx}" cy="{cy}" r="22" fill="{c}" stroke="#888" stroke-width="1"/>'
             f'<circle cx="{cx}" cy="{cy}" r="7" fill="#111"/>'
-            f'<text x="{cx}" y="{cy+38}" text-anchor="middle" fill="#fff" font-size="9">{label}</text>')
+            f'<text x="{cx}" y="{cy+38}" text-anchor="middle" fill="#fff" font-size="9">{esc(label)}</text>')
 
 def pot(cx, cy, label, color=None):
     c = color or '#1a1a1a'
     return (f'<circle cx="{cx}" cy="{cy}" r="15" fill="{c}" stroke="#666" stroke-width="1"/>'
             f'<line x1="{cx}" y1="{cy-12}" x2="{cx}" y2="{cy-3}" stroke="#fff" stroke-width="1.5"/>'
-            f'<text x="{cx}" y="{cy+28}" text-anchor="middle" fill="#fff" font-size="8">{label}</text>')
+            f'<text x="{cx}" y="{cy+28}" text-anchor="middle" fill="#fff" font-size="8">{esc(label)}</text>')
 
 def button(cx, cy, label, color='#555', wide=False):
     w, h = (64, 20) if wide else (52, 16)
@@ -38,7 +41,7 @@ def button(cx, cy, label, color='#555', wide=False):
     return (f'<rect x="{cx-w/2}" y="{cy-h/2}" width="{w}" height="{h}" rx="4" '
             f'fill="{color}" stroke="#000" stroke-width="0.5"/>'
             f'<text x="{cx}" y="{cy+3.5}" text-anchor="middle" fill="{text_color}" '
-            f'font-size="8" font-weight="600">{label}</text>')
+            f'font-size="8" font-weight="600">{esc(label)}</text>')
 
 def fader(cx, label):
     ft, fb = RY['F_top'], RY['F_bot']
@@ -47,7 +50,7 @@ def fader(cx, label):
             f'<rect x="{cx-16}" y="{cap_y-11}" width="32" height="22" rx="3" '
             f'fill="#666" stroke="#fff" stroke-width="0.7"/>'
             f'<text x="{cx}" y="{fb+18}" text-anchor="middle" fill="#fff" '
-            f'font-size="10" font-weight="600">{label}</text>')
+            f'font-size="10" font-weight="600">{esc(label)}</text>')
 
 def build_svg(title, subtitle, labels, deck_headers=None):
     """labels: dict control_id -> (text, color_override).
@@ -61,14 +64,14 @@ def build_svg(title, subtitle, labels, deck_headers=None):
 
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="Helvetica, Arial, sans-serif">',
            f'<rect width="{W}" height="{H}" fill="#1a1a1a"/>',
-           f'<text x="{W/2}" y="32" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">{title}</text>',
-           f'<text x="{W/2}" y="54" text-anchor="middle" fill="#bbb" font-size="13">{subtitle}</text>']
+           f'<text x="{W/2}" y="32" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">{esc(title)}</text>',
+           f'<text x="{W/2}" y="54" text-anchor="middle" fill="#bbb" font-size="13">{esc(subtitle)}</text>']
 
     # Deck headers
     if deck_headers:
         for x1, x2, lbl in deck_headers:
             out.append(f'<rect x="{x1}" y="70" width="{x2-x1}" height="22" fill="#222" stroke="#444" rx="3"/>'
-                       f'<text x="{(x1+x2)/2}" y="86" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">{lbl}</text>')
+                       f'<text x="{(x1+x2)/2}" y="86" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">{esc(lbl)}</text>')
 
     # Strip backgrounds
     for i, x in enumerate(SX):
@@ -112,13 +115,13 @@ def build_svg(title, subtitle, labels, deck_headers=None):
     # Global-control captions from labels
     g_lbl = labels.get('_global', {})
     if 'LAYER' in g_lbl:
-        out.append(f'<text x="90" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{g_lbl["LAYER"]}</text>')
+        out.append(f'<text x="90" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{esc(g_lbl["LAYER"])}</text>')
     if 'SCROLL' in g_lbl:
-        out.append(f'<text x="200" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{g_lbl["SCROLL"]}</text>')
+        out.append(f'<text x="200" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{esc(g_lbl["SCROLL"])}</text>')
     if 'SEL' in g_lbl:
-        out.append(f'<text x="300" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{g_lbl["SEL"]}</text>')
+        out.append(f'<text x="300" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{esc(g_lbl["SEL"])}</text>')
     if 'SHIFT' in g_lbl:
-        out.append(f'<text x="470" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{g_lbl["SHIFT"]}</text>')
+        out.append(f'<text x="470" y="{yb+15}" text-anchor="middle" fill="#aaa" font-size="8">{esc(g_lbl["SHIFT"])}</text>')
 
     out.append('</svg>')
     return '\n'.join(out)

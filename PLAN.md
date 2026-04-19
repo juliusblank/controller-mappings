@@ -16,7 +16,7 @@
 
 | # | Variant | Scope | Status |
 |---|---|---|---|
-| 1 | K3 + rekordbox + Euphonia | single K3 first, 2 decks | **Performance + Export specs drafted** (diagrams in `mappings/k3-rekordbox-mixer/diagrams/`) |
+| 1 | K3 + rekordbox + Euphonia | single K3 first, 2 decks | **Performance + Export specs, diagrams, and importable rekordbox CSVs drafted** |
 | 2 | Traktor K2 → rekordbox port | audit legacy `.tsi`, decide portability | pending |
 | 3 | K3 + rekordbox, no mixer | K3 handles channel mixing too | pending |
 | 4 | K3 + rekordbox + Bitwig | DJ + DAW integration | pending |

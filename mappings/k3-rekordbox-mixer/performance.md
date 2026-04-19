@@ -4,7 +4,9 @@ Single Xone:K3 controlling 2 decks (A, B) in rekordbox Performance Mode. All mix
 
 See `PLAN.md` for the control-labelling convention and deck assignment rationale.
 
-**Visual diagrams**: [`diagrams/performance-layer1.svg`](diagrams/performance-layer1.svg) · [`diagrams/performance-layer2.svg`](diagrams/performance-layer2.svg)
+- **Diagrams**: [`diagrams/performance-layer1.svg`](diagrams/performance-layer1.svg) · [`diagrams/performance-layer2.svg`](diagrams/performance-layer2.svg)
+- **Importable rekordbox mapping**: [`k3-performance.midi.csv`](k3-performance.midi.csv) — see [`IMPORT.md`](IMPORT.md)
+- **MIDI byte layout**: [`MIDI-SCHEME.md`](MIDI-SCHEME.md)
 
 ## Layer 1 — Play
 

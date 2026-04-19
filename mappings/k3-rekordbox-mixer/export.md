@@ -2,7 +2,9 @@
 
 Single Xone:K3 in rekordbox Export Mode, single-deck focus. All 4 strips serve the one focused track; `SEL` push loads the library selection into it. See `PLAN.md` for the control-labelling convention.
 
-**Visual diagrams**: [`diagrams/export-layerA.svg`](diagrams/export-layerA.svg) · [`diagrams/export-layerB.svg`](diagrams/export-layerB.svg) · [`diagrams/export-layerC.svg`](diagrams/export-layerC.svg) · [`diagrams/export-layerD.svg`](diagrams/export-layerD.svg)
+- **Diagrams**: [`diagrams/export-layerA.svg`](diagrams/export-layerA.svg) · [`diagrams/export-layerB.svg`](diagrams/export-layerB.svg) · [`diagrams/export-layerC.svg`](diagrams/export-layerC.svg) · [`diagrams/export-layerD.svg`](diagrams/export-layerD.svg)
+- **Importable rekordbox mapping**: [`k3-export.midi.csv`](k3-export.midi.csv) — see [`IMPORT.md`](IMPORT.md)
+- **MIDI byte layout**: [`MIDI-SCHEME.md`](MIDI-SCHEME.md)
 
 ## Design convention
 
