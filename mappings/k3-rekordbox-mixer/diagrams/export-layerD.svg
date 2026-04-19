@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1020" font-family="Helvetica, Arial, sans-serif">
+<rect width="560" height="1020" fill="#1a1a1a"/>
+<text x="280.0" y="32" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold">K3 · rekordbox — Export (single-deck focus)</text>
+<text x="280.0" y="54" text-anchor="middle" fill="#bbb" font-size="13">Layer D · Loop &amp; metadata</text>
+<rect x="32" y="70" width="516" height="22" fill="#222" stroke="#444" rx="3"/><text x="290.0" y="86" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">FOCUSED DECK (single)</text>
+<rect x="32" y="100" width="116" height="905" fill="#0f0f0f" stroke="#333" rx="5"/>
+<text x="40" y="114" fill="#666" font-size="9">S1</text>
+<rect x="162" y="100" width="116" height="905" fill="#0f0f0f" stroke="#333" rx="5"/>
+<text x="170" y="114" fill="#666" font-size="9">S2</text>
+<rect x="292" y="100" width="116" height="905" fill="#0f0f0f" stroke="#333" rx="5"/>
+<text x="300" y="114" fill="#666" font-size="9">S3</text>
+<rect x="422" y="100" width="116" height="905" fill="#0f0f0f" stroke="#333" rx="5"/>
+<text x="430" y="114" fill="#666" font-size="9">S4</text>
+<circle cx="90" cy="95" r="22" fill="#2a2a2a" stroke="#888" stroke-width="1"/><circle cx="90" cy="95" r="7" fill="#111"/><text x="90" y="133" text-anchor="middle" fill="#fff" font-size="9">tree / expand</text>
+<circle cx="90" cy="165" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="90" y1="153" x2="90" y2="162" stroke="#fff" stroke-width="1.5"/><text x="90" y="193" text-anchor="middle" fill="#fff" font-size="8">hp preview</text>
+<rect x="64.0" y="202.0" width="52" height="16" rx="4" fill="#d63384" stroke="#000" stroke-width="0.5"/><text x="90" y="213.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="90" cy="250" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="90" y1="238" x2="90" y2="247" stroke="#fff" stroke-width="1.5"/><text x="90" y="278" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="64.0" y="287.0" width="52" height="16" rx="4" fill="#0dcaf0" stroke="#000" stroke-width="0.5"/><text x="90" y="298.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="90" cy="335" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="90" y1="323" x2="90" y2="332" stroke="#fff" stroke-width="1.5"/><text x="90" y="363" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="64.0" y="372.0" width="52" height="16" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="90" y="383.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<rect x="85" y="415" width="10" height="230" fill="#0a0a0a" stroke="#555"/><rect x="74" y="519.0" width="32" height="22" rx="3" fill="#666" stroke="#fff" stroke-width="0.7"/><text x="90" y="663" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">TEMPO</text>
+<rect x="58.0" y="680.0" width="64" height="20" rx="4" fill="#198754" stroke="#000" stroke-width="0.5"/><text x="90" y="693.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">Play</text>
+<rect x="58.0" y="725.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="90" y="738.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">Cue</text>
+<rect x="58.0" y="770.0" width="64" height="20" rx="4" fill="#6f42c1" stroke="#000" stroke-width="0.5"/><text x="90" y="783.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">→ start</text>
+<rect x="58.0" y="815.0" width="64" height="20" rx="4" fill="#6f42c1" stroke="#000" stroke-width="0.5"/><text x="90" y="828.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">→ end</text>
+<circle cx="220" cy="95" r="22" fill="#2a2a2a" stroke="#888" stroke-width="1"/><circle cx="220" cy="95" r="7" fill="#111"/><text x="220" y="133" text-anchor="middle" fill="#fff" font-size="9">list / LOAD</text>
+<circle cx="220" cy="165" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="220" y1="153" x2="220" y2="162" stroke="#fff" stroke-width="1.5"/><text x="220" y="193" text-anchor="middle" fill="#fff" font-size="8">wf zoom</text>
+<rect x="194.0" y="202.0" width="52" height="16" rx="4" fill="#d63384" stroke="#000" stroke-width="0.5"/><text x="220" y="213.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="220" cy="250" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="220" y1="238" x2="220" y2="247" stroke="#fff" stroke-width="1.5"/><text x="220" y="278" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="194.0" y="287.0" width="52" height="16" rx="4" fill="#0dcaf0" stroke="#000" stroke-width="0.5"/><text x="220" y="298.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="220" cy="335" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="220" y1="323" x2="220" y2="332" stroke="#fff" stroke-width="1.5"/><text x="220" y="363" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="194.0" y="372.0" width="52" height="16" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="220" y="383.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<rect x="215" y="415" width="10" height="230" fill="#0a0a0a" stroke="#555"/><rect x="204" y="519.0" width="32" height="22" rx="3" fill="#666" stroke="#fff" stroke-width="0.7"/><text x="220" y="663" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">reserved</text>
+<rect x="188.0" y="680.0" width="64" height="20" rx="4" fill="#0d6efd" stroke="#000" stroke-width="0.5"/><text x="220" y="693.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">loop in</text>
+<rect x="188.0" y="725.0" width="64" height="20" rx="4" fill="#0d6efd" stroke="#000" stroke-width="0.5"/><text x="220" y="738.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">loop out</text>
+<rect x="188.0" y="770.0" width="64" height="20" rx="4" fill="#0d6efd" stroke="#000" stroke-width="0.5"/><text x="220" y="783.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">reloop</text>
+<rect x="188.0" y="815.0" width="64" height="20" rx="4" fill="#0d6efd" stroke="#000" stroke-width="0.5"/><text x="220" y="828.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">save loop</text>
+<circle cx="350" cy="95" r="22" fill="#2a2a2a" stroke="#888" stroke-width="1"/><circle cx="350" cy="95" r="7" fill="#111"/><text x="350" y="133" text-anchor="middle" fill="#fff" font-size="9">scrub fine / preview</text>
+<circle cx="350" cy="165" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="350" y1="153" x2="350" y2="162" stroke="#fff" stroke-width="1.5"/><text x="350" y="193" text-anchor="middle" fill="#fff" font-size="8">loop size</text>
+<rect x="324.0" y="202.0" width="52" height="16" rx="4" fill="#d63384" stroke="#000" stroke-width="0.5"/><text x="350" y="213.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="350" cy="250" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="350" y1="238" x2="350" y2="247" stroke="#fff" stroke-width="1.5"/><text x="350" y="278" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="324.0" y="287.0" width="52" height="16" rx="4" fill="#0dcaf0" stroke="#000" stroke-width="0.5"/><text x="350" y="298.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="350" cy="335" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="350" y1="323" x2="350" y2="332" stroke="#fff" stroke-width="1.5"/><text x="350" y="363" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="324.0" y="372.0" width="52" height="16" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="350" y="383.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<rect x="345" y="415" width="10" height="230" fill="#0a0a0a" stroke="#555"/><rect x="334" y="519.0" width="32" height="22" rx="3" fill="#666" stroke="#fff" stroke-width="0.7"/><text x="350" y="663" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">reserved</text>
+<rect x="318.0" y="680.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="350" y="693.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">★ 1</text>
+<rect x="318.0" y="725.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="350" y="738.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">★ 2</text>
+<rect x="318.0" y="770.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="350" y="783.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">★ 3</text>
+<rect x="318.0" y="815.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="350" y="828.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">★ 4</text>
+<circle cx="480" cy="95" r="22" fill="#2a2a2a" stroke="#888" stroke-width="1"/><circle cx="480" cy="95" r="7" fill="#111"/><text x="480" y="133" text-anchor="middle" fill="#fff" font-size="9">scrub bars / → cue</text>
+<circle cx="480" cy="165" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="480" y1="153" x2="480" y2="162" stroke="#fff" stroke-width="1.5"/><text x="480" y="193" text-anchor="middle" fill="#fff" font-size="8">tempo</text>
+<rect x="454.0" y="202.0" width="52" height="16" rx="4" fill="#d63384" stroke="#000" stroke-width="0.5"/><text x="480" y="213.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="480" cy="250" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="480" y1="238" x2="480" y2="247" stroke="#fff" stroke-width="1.5"/><text x="480" y="278" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="454.0" y="287.0" width="52" height="16" rx="4" fill="#0dcaf0" stroke="#000" stroke-width="0.5"/><text x="480" y="298.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<circle cx="480" cy="335" r="15" fill="#1a1a1a" stroke="#666" stroke-width="1"/><line x1="480" y1="323" x2="480" y2="332" stroke="#fff" stroke-width="1.5"/><text x="480" y="363" text-anchor="middle" fill="#fff" font-size="8">—</text>
+<rect x="454.0" y="372.0" width="52" height="16" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="480" y="383.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<rect x="475" y="415" width="10" height="230" fill="#0a0a0a" stroke="#555"/><rect x="464" y="519.0" width="32" height="22" rx="3" fill="#666" stroke="#fff" stroke-width="0.7"/><text x="480" y="663" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">reserved</text>
+<rect x="448.0" y="680.0" width="64" height="20" rx="4" fill="#ffc107" stroke="#000" stroke-width="0.5"/><text x="480" y="693.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">★ 5</text>
+<rect x="448.0" y="725.0" width="64" height="20" rx="4" fill="#6c757d" stroke="#000" stroke-width="0.5"/><text x="480" y="738.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">clear ★</text>
+<rect x="448.0" y="770.0" width="64" height="20" rx="4" fill="#198754" stroke="#000" stroke-width="0.5"/><text x="480" y="783.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">add playlist</text>
+<rect x="448.0" y="815.0" width="64" height="20" rx="4" fill="#333" stroke="#000" stroke-width="0.5"/><text x="480" y="828.5" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">—</text>
+<rect x="25" y="910" width="510" height="90" fill="#0a0a0a" stroke="#333" rx="5"/>
+<rect x="55" y="930" width="70" height="50" rx="6" fill="#dc3545" stroke="#000"/><text x="90" y="960" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">LAYER</text>
+<circle cx="200" cy="955" r="18" fill="#222" stroke="#666"/><text x="200" y="992" text-anchor="middle" fill="#bbb" font-size="10">SCROLL</text>
+<circle cx="300" cy="955" r="18" fill="#222" stroke="#666"/><text x="300" y="992" text-anchor="middle" fill="#bbb" font-size="10">SEL</text>
+<rect x="430" y="930" width="80" height="50" rx="6" fill="#198754" stroke="#000"/><text x="470" y="960" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">SHIFT</text>
+<text x="90" y="925" text-anchor="middle" fill="#aaa" font-size="8">A→B→C→D</text>
+<text x="200" y="925" text-anchor="middle" fill="#aaa" font-size="8">list</text>
+<text x="300" y="925" text-anchor="middle" fill="#aaa" font-size="8">tree / load</text>
+<text x="470" y="925" text-anchor="middle" fill="#aaa" font-size="8">—</text>
+</svg>
